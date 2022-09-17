@@ -1,0 +1,14 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            xmlns:tns="http//prueba-tecnica.net/customer"
+            targetNamespace="http://prueba-tecnica.net/customer.xsd"
+            elementFormDefault="qualified"
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+>
+    <xsd:complexType name="Usuario">
+        <xsd:sequence>
+            <xsd:element name="nombre" type="xsd:normalizedString"/>
+            <xsd:element name="tipoDocumento" type="xsd:string"/>
+            <xsd:element name="numeroDocumento" type="xsd:decimal"/>
+        </xsd:sequence>
+    </xsd:complexType>
+</xsd:schema>
